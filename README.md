@@ -1,4 +1,13 @@
 # Projeto Painel de Moderação para WhatsApp com Bot Interativo
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Node.js](https://img.shields.io/badge/backend-Node.js-blue)
+![React](https://img.shields.io/badge/frontend-React-lightblue)
+![Status](https://img.shields.io/badge/status-Ativo-success)
+![Last Commit](https://img.shields.io/github/last-commit/dellirios/Moderador-Whatsapp)
+![Repo Size](https://img.shields.io/github/repo-size/dellirios/Moderador-Whatsapp)
+![GitHub Issues](https://img.shields.io/github/issues/dellirios/Moderador-Whatsapp)
+![Top Language](https://img.shields.io/github/languages/top/dellirios/Moderador-Whatsapp)
+
 
 ## Visão Geral do Projeto
 
@@ -50,9 +59,40 @@ O objetivo é fornecer uma ferramenta para ajudar na moderação de comunidades 
 * **API REST:**
     * Comunicação entre o frontend e o backend para todas as operações de gestão e visualização.
 
-## Estrutura do Projeto (Sugerida)
 
-/painel-moderador/├── /painel-frontend/        # Projeto Next.js (Frontend)│   ├── /app/│   ├── /components/│   │   └── ui/              # Componentes Shadcn/UI│   │   └── GraficoOfensasCliente.tsx # Exemplo de componente cliente│   ├── /lib/│   │   └── utils.ts│   ├── next.config.mjs│   ├── package.json│   ├── postcss.config.js│   ├── tailwind.config.ts│   └── tsconfig.json│└── /painel-backend/         # Projeto Node.js/Express (Backend)├── /dados/              # Ficheiros JSON para persistência│   ├── whatsapp_auth/   # Pasta para sessão do WhatsApp│   ├── advertencias.json│   ├── configuracoes.json│   ├── eventos_salvos.json│   ├── grupos_autorizados.json│   ├── palavras_proibidas.json│   ├── palavras_sensiveis.json│   └── usuarios_banidos.json├── index.js             # Ficheiro principal do servidor backend├── package.json└── .env                 # Ficheiro para variáveis de ambiente
+## 📁 Estrutura do Projeto (Sugerida)
+
+```txt
+/painel-moderador/
+├── painel-frontend/         # Projeto Next.js (Frontend)
+│   ├── app/
+│   ├── components/
+│   │   └── ui/              # Componentes Shadcn/UI
+│   │       └── GraficoOfensasCliente.tsx
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── next.config.mjs
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.ts
+│   └── tsconfig.json
+│
+├── painel-backend/          # Projeto Node.js/Express (Backend)
+│   ├── dados/               # Arquivos JSON para persistência
+│   │   ├── whatsapp_auth/
+│   │   ├── advertencias.json
+│   │   ├── configuracoes.json
+│   │   ├── eventos_salvos.json
+│   │   ├── grupos_autorizados.json
+│   │   ├── palavras_proibidas.json
+│   │   ├── palavras_sensiveis.json
+│   │   └── usuarios_banidos.json
+│   ├── index.js             # Servidor principal
+│   └── package.json
+│
+└── .env                     # Variáveis de ambiente
+```
+
 ## Tecnologias Utilizadas
 
 **Backend:**
