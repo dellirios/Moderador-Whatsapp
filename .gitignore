@@ -1,0 +1,71 @@
+# Ficheiros de dependências e builds
+node_modules/
+npm-debug.log
+yarn-error.log
+build/
+dist/
+out/
+coverage/
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ficheiros de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ficheiros de IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ficheiros de log
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Ficheiros de cache
+.npm
+.eslintcache
+.stylelintcache
+.prettiercache
+.yarn-integrity
+
+# Ficheiros específicos do Next.js (se aplicável ao frontend)
+.next/
+out/
+
+# Ficheiros de teste
+coverage/
+.nyc_output/
+
+# Ficheiros de Puppeteer (usados pelo whatsapp-web.js no backend)
+.puppeteer_dev_chromium_*/
+
+# Ficheiros de sessão do whatsapp-web.js (se não estiverem dentro de /dados/ e essa pasta estiver no .gitignore)
+# Se a pasta /dados/whatsapp_auth/ não estiver no .gitignore, pode adicionar:
+# dados/whatsapp_auth/
+
+# Ficheiros de dados JSON (se não quiserem ser versionados - CUIDADO: isto pode incluir dados de configuração importantes)
+# Se a pasta /dados/ estiver versionada, ignore esta secção.
+# Caso contrário, pode adicionar:
+# dados/*.json
+# !dados/exemplo_config.json # Exemplo para manter um ficheiro de exemplo
+
+# Outros
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
